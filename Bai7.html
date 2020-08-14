@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+        <script>
+        let a = prompt("Nhập vào số a :");
+        let b = prompt("Nhập vào số b :");
+        let c = prompt("Nhập vào số c :");
+
+        if (a == 0){
+            if (b == 0){
+                if (c == 0){
+                    alert("Phương trình vô số nghiệm");
+                }else {
+                    alert("Phương trình vô nghiệm");
+                }
+            }else {
+                let nghiem = -c/b;
+                alert("Phương trình có 1 nghiệm X = " + nghiem);
+            }
+        }else {
+            let delta = b*b - 4*a*c;
+            if (delta > 0){
+                let nghiem1 = ((-b + Math.sqrt(delta))/(2*a));
+                let nghiem2 = ((-b - Math.sqrt(delta))/(2*a));
+                alert("Phương trình có 2 nghiệm : " + nghiem1 + " và " + nghiem2);
+            }else if(delta == 0){
+                let nghiemkep = (-b)/(2*a);
+                alert("Phương trình có nghiệm kép : " + nghiemkep);
+            }else if (delta < 0){
+                alert("Phương trình vô nghiệm");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào số a :"));
+        let b = parseFloat(prompt("Nhập vào số b :"));
+
+        if (a === 0){
+            if (b === 0){
+                    alert("Phương trình vô số nghiệm");
+                }else {
+                    alert("Phương trình vô nghiệm");
+                }
+            } else {
+                let nghiem = -b/a;
+                alert("Phương trình có 1 nghiệm" + nghiem);
+            }
+    </script>
+</body>
+</html>

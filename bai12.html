@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+    <script>
+        let loan = prompt("Nhập vào số tiền muốn vay.",'');
+        let month = prompt("Nhập vào số tháng vay (lãi suất 1% 1 tháng)");
+        let futureValue = loan*Math.pow((1 + 0.01),month) - loan;
+        alert("Lãi xuất phải trả là " + futureValue);
+    </script>
+</body>
+</html>

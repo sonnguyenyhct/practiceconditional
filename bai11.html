@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+    <script>
+       let thunhap = parseFloat(prompt("Nhập thu nhập tính thuế (triệu): "));
+       if (thunhap > 0 && thunhap <= 5){
+            alert("Thuế phải trả là : " + thunhap*0.05);
+       }else if (thunhap < 10){
+           alert("Thuế phải trả là : " + (thunhap*0.1 - 0.25));
+       }else if (thunhap < 18){
+           alert("Thuế phải trả là : " + (thunhap*0.15 - 0.75));
+       }else if (thunhap < 32){
+           alert("Thuế phải trả là : " + (thunhap*0.2 - 1.65));
+       }else if (thunhap < 52){
+           alert("Thuế phải trả là : " + (thunhap*0.25 - 3.25));
+       }else if (thunhap < 80){
+           alert("Thuế phải trả là : " + (thunhap*0.3 - 5.85));
+       }else {
+           alert("Thuế phải trả là : " + (thunhap*0.35 - 9.85));
+       }
+    </script>
+</body>
+</html>
